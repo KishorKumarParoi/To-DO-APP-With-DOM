@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7faf204357.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>To Do App</h1>
+        <h5>Personalize Task Document</h5>
+        <img src="images/Kishor kumar paroi.png" alt="" />
+    </header>
+
+    <form id="form">
+        <label for="new-task">
+            Enter Your Task :
+            <input type="text" id="new-task" placeholder="Add New Task" autofocus />
+            <br />
+            <button type="submit" class="btn" id="submit">Submit</button>
+            <p id="demo"></p>
+        </label>
+    </form>
+
+    <section class="container">
+        <div class="todoList">
+            <h1>To Do List</h1>
+            <ul id="items" style="list-style-type: none">
+                <li class="item">
+                    <input type="checkbox" /><label>Task Name</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox" /><label>Task Name</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox" /><label>Task Name</label>
+                </li>
+            </ul>
+        </div>
+        <div class="completeList" style="list-style-type: none">
+            <h1>Completed Task List</h1>
+            <ul style="list-style-type: none" id="completed-items">
+                <li class="del-item">
+                    <label>Task Name</label>
+                    <button class="btn-delete" type="submit">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
